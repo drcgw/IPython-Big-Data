@@ -1,0 +1,13 @@
+Abby's expanded list of helpful links
+
+matplotlib:
+http://www.labri.fr/perso/nrougier/teaching/matplotlib/
+https://www.youtube.com/watch?v=wAwQ-noyB98
+
+Pandas:
+http://nbviewer.ipython.org/github/twiecki/financial-analysis-python-tutorial/blob/master/1.%20Pandas%20Basics.ipynb
+https://bitbucket.org/hrojas/learn-pandas
+
+Exploratory Data Analysis:
+http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb
+http://www.bigdataexaminer.com/exploratory-data-analysis-in-python-using-pandas-matplotlib-and-numpy/
