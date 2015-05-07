@@ -1,0 +1,10 @@
+Does host affect virus mutation rate? Host replication rate?
+
+Hypothesis: The older the genome sequence, the fewer the mutations (rate, rather than #)
+Hypothesis: Some parts of genome are more susceptible to change than others (then we find the parts)
+Hypothesis: mutation rate depends on host (and possibly on host's replication rate); look at variation within samples, BY year and BETWEEN years (separately?)
+Hypothesis: H1N1 mutation rate is independent of host species
+  - own replication machinery
+  - needs host machinery
+
+TODO: read literature about H1N1 replication.
