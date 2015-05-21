@@ -1,0 +1,138 @@
+% Big Data Analytics
+% Lecture on R
+% C. G. Wilson
+% May 20th, 2015
+
+\documentclass{beamer}
+
+\usetheme{Dresden}
+\usecolortheme{beaver}
+%%\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Brackets below are for short titles
+\title[]{An Introduction to Databases}
+%\subtitle[]{}
+\author[]{Christopher G. Wilson, Ph.D.}
+\date{\today}
+\institute[LLU]{Loma Linda University\\
+Dept. of Pediatrics and Center for Perinatal Biology}
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section[]{Review}
+%\begin{frame}{}
+%Please make sure that the IPython notebook for Project 1 is 
+%in the class GitHub repository.
+%\end{frame}
+
+%\section[]{Why use R?}
+\begin{frame}{R is \ldots}
+\begin{itemize}
+\item A comprehensive and expandable statistical environment and programming language 
+\item Has powerful graphics
+\item Most widely used language in bioinformatics
+\item Is standard for data mining and biostatistical analysis 
+\item Did everyone get through Holly's tutorial??
+\end{itemize} 
+\end{frame}
+
+\section[]{R vs Python}
+\begin{frame}{R versus Python: head-to-head}
+$http://blog.datacamp.com/r-or-python-for-data-analysis/?imm\_mid=0d2357\&cmp=em-data-na-na-newsltr\_20150520$
+\end{frame}
+
+\section[]{Databases}
+\begin{frame}{What is a database?}
+\begin{itemize}
+\item A \emph{database} is an organized collection of related records (files, data, etc.) 
+\item Records previously stored in separate files can be organized in a common pool of data
+\item A \emph{Database Management System} (DBMS) is a software application that allows you to create, define, query, update, and administer a database
+\item Commonly used DBMSs include: \emph{MySQL, PostgreSQL, Oracle, Sybase, IBM DB2, etc.} 
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{A brief history of DBMSs}
+\begin{itemize}
+\item \textbf{1960s} The introduction of the term database coincided with the availability of direct-access storage (disks and drums) from the mid-1960s onwards. The Oxford English dictionary cites a 1962 report by \emph{System Development Corporation} as the first to use the term "data-base" in a specific technical sense.
+\item \textbf{1970s} Edgar Codd (IBM) was primarily involved hard disk development. He was unhappy with available DBMSs---notably the lack of a ``search'' facility---he wrote a  groundbreaking paper ``A Relational Model of Data for Large Shared Data Banks'' that was the foundation for Structured Query Language (SQL)
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{A brief history of DBMSs}
+\begin{itemize}
+\item \textbf{1980s} The age of desktop computing---new computers empowered their users with spreadsheets like \emph{Lotus 1-2-3} and database software like \emph{dBASE}, which was lightweight and easy to understand
+\item \textbf{1990s to present} Object-oriented programming alters the landscape for database interfaces. Programmers and designers began to treat the data in their databases as objects. This allows for relations between data to be relations to objects and their attributes and not to individual fields.
+\end{itemize} 
+\end{frame}
+
+\section[]{Structured Query Language}
+\begin{frame}{SQL}
+\begin{itemize}
+\item \emph{Structured Query Language (SQL)} is a special-purpose programming language designed for managing data in relational database management systems (RDBMS)
+\item Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language and a data manipulation language 
+\item The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control
+\item SQL became an American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SQL (cont.)}
+\begin{itemize}
+\item Despite the existence of such standards, though, most SQL code is not completely portable among different database systems without changes
+\item \emph{Structured Query Language (SQL)} is a special-purpose programming language designed for managing data in relational database management systems (RDBMS)
+\item Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language and a data manipulation language 
+\item The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control
+\end{itemize}
+\end{frame}
+
+\section[]{NOSQL and NewSQL}
+\begin{frame}{Post-relational Databases}
+\begin{itemize}
+\item XML databases are a type of structured document-oriented database that allows querying based on XML document attributes 
+\item XML databases are mostly used in enterprise database management, where XML is being used as the machine-to-machine data interoperability standard. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{NewSQL}
+\begin{itemize}
+\item \emph{NewSQL} is a class of modern relational databases that aims to provide the same scalable performance of NoSQL systems for online transaction processing (read-write) workloads while still using SQL
+\item These databases include \emph{ScaleBase, Clustrix, EnterpriseDB, MemSQL, NuoDB,  VoltDB, etc.} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Some YouTube links}
+$https://www.youtube.com/watch?v=FR4QIeZaPeM$\\
+$https://www.youtube.com/watch?v=4Z9KEBexzcM$\\
+$https://www.youtube.com/watch?v=qI\_g07C\_Q5I$\\
+\end{frame}
+
+\section[]{SourceTree Demo} 
+\begin{frame}{Today}
+\begin{itemize}
+\item Jon will demo \emph{SourceTree} for us
+\item Time to start on the next project\ldots
+\end{itemize}
+\end{frame}
+%\vspace{0.25cm}
+%\textbf{Copy and paste from R into Excel or other programs:}
+%\begin{verbatim}
+%> ## On Windows/Linux systems:
+%> write.table(iris, "clipboard", sep="\backslash{t}", col.names=NA, quote=F) > ## On Mac OS X systems:
+%> zz <- pipe('pbcopy', 'w')
+%> write.table(iris, zz, sep="\backslash{t}", col.names=NA, quote=F)
+%> close(zz)
+%\end{verbatim}
+
+
+\end{document}
