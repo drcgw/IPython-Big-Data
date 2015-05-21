@@ -1,0 +1,140 @@
+% Big Data Analytics
+% Lecture on R
+% C. G. Wilson
+% May 13th, 2015
+
+\documentclass{beamer}
+
+\usetheme{Dresden}
+\usecolortheme{beaver}
+%%\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Brackets below are for short titles
+\title[]{An Introduction to R}
+%\subtitle[]{}
+\author[]{Christopher G. Wilson, Ph.D.}
+\date{\today}
+\institute[LLU]{Loma Linda University\\
+Dept. of Pediatrics and Center for Perinatal Biology}
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section[]{Project 1 due today}
+\begin{frame}{Project 1}
+Please make sure that the IPython notebook for Project 1 is 
+in the class GitHub repository.
+\end{frame}
+
+\section[]{Why use R?}
+\begin{frame}{Why should you use R}
+\begin{itemize}
+\item Complete statistical environment and programming language 
+\item Efficient functions and data structures for data analysis 
+\item Powerful graphics\item Access to fast growing number of analysis packages\item Most widely used language in bioinformatics\item Is standard for data mining and biostatistical analysis 
+\item Technical advantages include free, open-source, multi-platform
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{Books and Documentation}
+\begin{itemize}
+\item simpleR - Using R for Introductory Statistics (John Verzani, 2004) 
+\item Bioinformatics and Computational Biology Solutions Using R and Bioconductor (Gentleman et al., 2005)
+\item Some free tutorials/books are available at: \texttt{http://www.statmethods.net/about/books.html}
+\item Extensive documentation available at \texttt{http://www.r-project.org/}
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{Package Depositories}
+There are many contributed packages that make R extremely versatile
+\begin{itemize}
+\item CRAN ($>3500$ packages) general data analysis 
+\item Bioconductor ($>700$ packages) bioscience data analysis 
+\item Omegahat ($>30$ packages) programming interfaces
+\end{itemize} 
+\end{frame}
+
+\section[]{R and supporting software installation}
+\begin{frame}{R Installation}
+\begin{itemize}
+\item Install \emph{R} for your operating system from: \texttt{http://cran.r-project.org/mirrors.html} \item Install \emph{R-Studio} from: \texttt{http://www.rstudio.com/ide/download} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Installation of CRAN Packages}
+From the command prompt, install packages:\\
+\texttt{$>$ install.packages(c("pkg1", "pkg2"))}\\
+\texttt{$>$ install.packages("pkg.zip", repos=NULL)}
+\end{frame}
+
+\begin{frame}{Installation of BioConductor Packages}
+From the command prompt, install packages:\\
+\texttt{$>$ source("http://www.bioconductor.org/biocLite.R")}\\
+\texttt{$>$ library(BiocInstaller)}\\
+\texttt{$>$ BiocVersion()}\\
+\texttt{$>$ bioclite()}\\
+\texttt{$>$ bioclite(c("pkg1", "pkg2"))}
+\end{frame}
+
+\section[]{Working within R}
+\begin{frame}{Startup and Closing R}
+\begin{itemize}
+\item \textbf{Starting R:} The R GUI versions, including RStudio, under Windows and Mac OS X can be opened by double-clicking their icons. Alternatively, one can start it by typing `R' in a terminal (default under Linux)
+\item \textbf{Closing R:} The R environment is controlled by hidden files in the startup directory: .RData, .Rhistory and .Rprofile (optional).\item \textbf{Close R by typing:} \texttt{q()}\end{itemize}
+\end{frame}
+
+\begin{frame}{Getting Around}
+Create an object with the assignment operator $<- (or =)$\\ 
+$> object <- ...$\\List objects in current R session\\$> ls()$\\Return content of current working directory\\$> dir()$\\Return path of current working directory\\$> getwd()$\\Change current working directory\\$> setwd("/home/user")$
+\end{frame}
+
+\begin{frame}{Basic R Syntax}
+General R command syntax\\$> object <-  function\_name(arguments)$\\$> object <-  object[arguments]$\\Finding help\\$> ?function\_name$\\Load a library\\$> library("my_library")$\\Lists all functions defined by a library\\$> library(help="my\_library")$\\Load library manual (PDF file)\\$> vignette("my\_library")$
+\end{frame}
+
+\begin{frame}{Executing R Scripts}
+\textbf{Execute an R script from within R:}\\
+$> source("my\_script.R")$\\
+\vspace{0.50cm}
+
+\textbf{Execute an R script from command-line:}\\
+
+\$ $Rscript~my\_script.R$\\\$ $R~CMD~BATCH~my\_script.R$\\\$ $R~$-~-$slave~<~my\_script.R$
+\end{frame}
+
+\begin{frame}{Reading and Writing External Data}
+\textbf{Import data from tabular files into R:}\\
+$> myDF <- read.delim("myData.xls", sep=``\backslash{t}'')$\\
+%\vspace{0.25cm}
+\textbf{Export data from R to tabular files:}\\$> write.table(myDF, file=``myfile.xls'', sep=``\backslash{t}'', quote=FALSE, col.names=NA)$\\
+\vspace{0.25cm}
+\textbf{Copy and paste (e.g. from Excel) into R:}\\
+\# On Windows/Linux systems:\\$> read.delim(``clipboard'')$\\
+\# On Mac OS X systems:\\$> read.delim(pipe(``pbpaste''))$
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Large{For the remainder of class: Install \emph{R} and \emph{R-Studio} and work through
+Holly Harlin's R tutorial}
+ \end{center}
+\end{frame}
+%\vspace{0.25cm}
+%\textbf{Copy and paste from R into Excel or other programs:}
+%\begin{verbatim}
+%> ## On Windows/Linux systems:%> write.table(iris, "clipboard", sep="\backslash{t}", col.names=NA, quote=F) > ## On Mac OS X systems:%> zz <- pipe('pbcopy', 'w')%> write.table(iris, zz, sep="\backslash{t}", col.names=NA, quote=F)%> close(zz)
+%\end{verbatim}
+
+
+\end{document}
