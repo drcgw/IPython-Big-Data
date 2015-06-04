@@ -1,0 +1,43 @@
+NM_000335.4(SCN5A):c.5452G>A (p.Asp1818Asn)
+rs137854619
+http://www.ncbi.nlm.nih.gov/snp/137854619
+
+NM_000335.4(SCN5A):c.4508_4516delAGAAGCCCC (p.Gln1506_Pro1508del)
+rs397514251
+http://www.ncbi.nlm.nih.gov/snp/397514251
+
+NM_000335.4(SCN5A):c.4928G>A (p.Arg1643His)
+rs28937316
+http://www.ncbi.nlm.nih.gov/snp/28937316
+
+NM_000335.4(SCN5A):c.3971A>G (p.Asn1324Ser)
+rs28937317
+http://www.ncbi.nlm.nih.gov/snp/28937317
+
+NM_000335.4(SCN5A):c.4865G>A (p.Arg1622Gln)
+rs137854600
+http://www.ncbi.nlm.nih.gov/snp/137854600
+
+NM_000335.4(SCN5A):c.5347G>A (p.Glu1783Lys)
+rs137854601
+http://www.ncbi.nlm.nih.gov/snp/137854601
+
+NM_000335.4(SCN5A):c.5382_5384dupTGA (p.Tyr1794_Glu1795insAsp)
+rs397514449
+http://www.ncbi.nlm.nih.gov/snp/397514449
+
+NM_001099404.1(SCN5A):c.2821_2822delTCinsAA (p.Ser941Asn)
+rs137854605
+http://www.ncbi.nlm.nih.gov/snp/137854605
+
+NM_000335.4(SCN5A):c.2989G>T (p.Ala997Ser)
+rs137854609
+http://www.ncbi.nlm.nih.gov/snp/137854609
+
+NM_000335.4(SCN5A):c.5474G>A (p.Arg1825His)
+rs137854610
+http://www.ncbi.nlm.nih.gov/snp/137854610
+
+NM_000335.4(SCN5A):c.5381A>G (p.Tyr1794Cys)
+rs137854614
+http://www.ncbi.nlm.nih.gov/snp/137854614
